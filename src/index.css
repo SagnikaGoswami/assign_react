@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Erbil';
+  src: url('/fonts/erbil.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
