@@ -1,18 +1,22 @@
 import { CgArrowLongRight } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const Services = () => {
     const services = [
         {
-            para: "Office of multiple interest content",
-            heading: "Collaborative & partnership"
+            content: "Office of multiple interest content",
+            heading: "Collaborative & partnership",
+            serviceName: "service1"
         },
         {
-            para: "The hanger US Air force digital experimental",
-            heading: "We talk about our weight"
+            content: "The hanger US Air force digital experimental",
+            heading: "We talk about our weight",
+            serviceName: "service2"
         },
         {
-            para: "Delta faucet content, social, digital",
-            heading: "Piloting digital confidence"
+            content: "Delta faucet content, social, digital",
+            heading: "Piloting digital confidence",
+            serviceName: "service3"
         },
     ]
 
@@ -29,16 +33,21 @@ const Services = () => {
             {/* services */}
             {services.map((service, index) => (
                 <>
-                <div key={index} className="flex flex-col md:flex-row justify-around md:justify-around items-center w-full mt-3">
-                    <p className="w-full  md:w-[23%] font-[400] text-[18px] md:text-[25px] lg:text-[30px] leading-[24px] md:leading-[62px] lg:leading-[42px] font-['Satoshi-Regular'] tracking-normal text-center md:text-left mb-4 md:mb-0">
-                        {service.para}
-                    </p>
-                    <p className="w-full  md:w-[70%] font-[400] text-[30px] md:text-[50px] lg:text-[56px] leading-[36px] md:leading-[106px] lg:leading-[116px] font-['Gerbil'] tracking-normal text-center md:text-left mb-4 md:mb-0">
-                        {service.heading}
-                    </p>
-                    <CgArrowLongRight size={50} className="w-full md:w-[7%] text-center cursor-pointer" />
-                </div>
-                <hr className='w-full border-t border-gray-300 mb-5 mt-5' />
+                    <div key={index} className="flex flex-col md:flex-row justify-around md:justify-around items-center w-full mt-3 cursor-pointer">
+                        <p className="w-full  md:w-[23%] font-[400] text-[18px] md:text-[25px] lg:text-[30px] leading-[24px] md:leading-[62px] lg:leading-[42px] font-['Satoshi-Regular'] tracking-normal text-center md:text-left mb-4 md:mb-0">
+                            <Link to={`/services/${service.serviceName}`}>{service.content}</Link>
+                        </p>
+                        <p className="w-full  md:w-[70%] font-[400] text-[30px] md:text-[50px] lg:text-[56px] leading-[36px] md:leading-[106px] lg:leading-[116px] font-['Gerbil'] tracking-normal text-center md:text-left mb-4 md:mb-0">
+                            <Link to={`/services/${service.serviceName}`}>{service.heading}</Link>
+                        </p>
+
+                        <div>
+                            <Link to={`/services/${service.serviceName}`}>
+                                <CgArrowLongRight className="w-10 h-10 md:w-16 md:h-16 text-black cursor-pointer" />
+                            </Link>
+                        </div>
+                    </div>
+                    <hr className='w-full border-t-2 border-gray-300 mb-5 mt-5' />
                 </>
             ))}
         </div>
