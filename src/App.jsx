@@ -5,6 +5,9 @@ import Studio from './pages/Studio'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Faqs from './pages/Faqs'
+import Service1 from './pages/Service1'
+import Service2 from './pages/Service2'
+import Service3 from './pages/Service3'
 
 const App = () => {
 
@@ -28,7 +31,19 @@ const App = () => {
     {
       path: '/faqs',
       element: <Faqs />
-    }
+    },
+    {
+      path: '/services/service1',
+      element: <Service1 />
+    },
+    {
+      path: '/services/service2',
+      element: <Service2 />
+    },
+    {
+      path: '/services/service3',
+      element: <Service3 />
+    },
   ])
 
   return (

@@ -2,7 +2,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Features = () => {
     return (
-        <div className="bg-purple-500">
+        <div>
             <div className='flex flex-col justify-between w-[88%] mx-auto min-h-screen lg:min-h-[650px]'>
                 {/* first */}
                 <div className='flex flex-col md:flex-row md:justify-end w-full'>
