@@ -38,7 +38,7 @@ const HeroSection = () => {
 
             <div className="w-full px-4 mx-auto mt-20">
                 {/* head section*/}
-                <div className='w-[90%] mx-auto '>
+                <div className='w-[98%] mx-auto '>
                     <p className="font-[400] text-[30px] md:text-[60px] lg:text-[100px] leading-[38px] md:leading-[75px] lg:leading-[126px] font-['Gerbil'] tracking-normal text-center">
                         The thinkers and
                         doers were changing
