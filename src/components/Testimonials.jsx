@@ -71,8 +71,9 @@ const Testimonials = () => {
 
                 {/* message */}
                 <div className='relative rounded-3xl p-8 md:p-16 text-center bg-[#D7EEDD4D]'>
+
                     {/* starting quote icon */}
-                    <ImQuotesLeft className="absolute top-4 md:top-14 left-4 md:left-9 text-gray-600 text-xl md:text-2xl" size={35} md:size={45} />
+                    <ImQuotesLeft className="absolute top-4 md:top-14 left-4 md:left-5 lg:left-7 text-gray-300 text-xl md:text-2xl" size={35} md:size={45} />
 
                     {/* message */}
                     <p className=" text-gray-800 text-20px leading-relaxed font-[400] lg:leading-[42px] lg:text-[30px] font-['Satoshi-Regular'] tracking-normal text-center">
@@ -85,7 +86,7 @@ const Testimonials = () => {
                     </p>
 
                     {/* ending quote icon */}
-                    <ImQuotesRight className="absolute bottom-4 md:bottom-16 right-4 md:right-20 lg:right-48 lg:bottom-16 text-gray-600 text-xl md:text-2xl" size={35} md:size={45} />
+                    <ImQuotesRight className="absolute bottom-4 md:bottom-16 right-24 md:right-40 lg:right-72 lg:bottom-16 text-gray-300 text-xl md:text-2xl" size={35} md:size={45} />
 
                 </div>
             </div>
