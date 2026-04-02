@@ -1,5 +1,3 @@
-import React from 'react'
-
 const HeroSection = () => {
 
     const images = [
@@ -11,7 +9,7 @@ const HeroSection = () => {
         {
             src: '/images/img1.png',
             alt: 'img1',
-            position: "top-1/3 left-[10%] lg:left-[13%] -translate-y-1/2"
+            position: "top-1/3 left-[10%] lg:top-[25%] -translate-y-1/2"
         },
         {
             src: '/images/img3.png',
@@ -26,12 +24,12 @@ const HeroSection = () => {
         {
             src: '/images/img6.png',
             alt: 'img6',
-            position: "bottom-1/2 left-[66%] lg:left-[70%] z-10"
+            position: "bottom-1/2 left-[66%] lg:left-[72%] bottom-1/2 z-10"
         },
         {
             src: '/images/img8.png',
             alt: 'img8',
-            position: "top-1/2 left-[80%] lg:right-0 -translate-y-1/2"
+            position: "top-1/2 right-0 -translate-y-1/2"
         }
     ]
 
@@ -39,8 +37,8 @@ const HeroSection = () => {
         <div>
 
             <div className="w-full px-4 mx-auto mt-20">
-                {/* head */}
-                <div className='w-[90%] mx-auto'>
+                {/* head section*/}
+                <div className='w-[90%] mx-auto '>
                     <p className="font-[400] text-[30px] md:text-[60px] lg:text-[100px] leading-[38px] md:leading-[75px] lg:leading-[126px] font-['Gerbil'] tracking-normal text-center">
                         The thinkers and
                         doers were changing
@@ -52,14 +50,14 @@ const HeroSection = () => {
                     </p>
                 </div>
 
-                {/* image */}
-                <div className='w-full mt-35 relative h-[300px] md:h-[400px]'>
+                {/* image section */}
+                <div className='w-[90%] mx-auto mt-35 lg:mt-25 relative h-[300px] md:h-[400px] '>
                     {
                         images.map((image, index)=>(
                             <img key={index}
                             src={image.src}
                             alt={image.alt}
-                            className={`absolute w-20 h-20 md:w-32 md:h-32 lg:w-50 lg:h-50 rounded-full object-cover border-4 border-white ${image.position}`} 
+                            className={`absolute w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-white ${image.position}`} 
                              />
                         ))
                     }

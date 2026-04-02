@@ -9,7 +9,6 @@ import Faqs from './pages/Faqs'
 const App = () => {
 
   const router = createBrowserRouter([
-    // home studio services contact faqs
     {
       path: '/',
       element: <Home />
