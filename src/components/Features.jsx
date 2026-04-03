@@ -1,9 +1,7 @@
-import { BsArrowRight } from "react-icons/bs";
-
 const Features = () => {
     return (
         <div className="mb-40 md:mb-62">
-            <div className='flex flex-col relative justify-between w-[88%] mx-auto min-h-screen lg:min-h-[650px] '>
+            <div className='flex flex-col overflow-hidden md:min-h-[400px] relative justify-between w-[88%] mx-auto min-h-screen lg:min-h-[650px] '>
                 {/* first */}
                 <div className='flex flex-col relative md:flex-row md:justify-end w-full mb-20 md:mb-30 overflow-hidden'>
                     {/* left */}
@@ -53,8 +51,6 @@ const Features = () => {
                                     viewBox="0 0 145 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M144.354 4.03556C144.549 3.8403 144.549 3.52372 144.354 3.32845L141.172 0.146473C140.976 -0.0487893 140.66 -0.0487893 140.464 0.146473C140.269 0.341735 140.269 0.658318 140.464 0.85358L143.293 3.68201L140.464 6.51043C140.269 6.7057 140.269 7.02228 140.464 7.21754C140.66 7.4128 140.976 7.4128 141.172 7.21754L144.354 4.03556ZM0 3.68201V4.18201H144V3.68201V3.18201H0V3.68201Z" fill="black" />
                                 </svg>
-
-                                {/* <BsArrowRight className="inline-block ml-2 cursor-pointer" /> */}
                             </p>
                         </div>
                     </div>
@@ -76,7 +72,7 @@ const Features = () => {
 {/* width="1483" height="654"  */}
                 <svg 
 
-                className="absolute inset-x-0 lg:top-[23%] lg:left-[5%] lg:w-[88.7vw] lg:h-[650px]"
+                className="absolute inset-x-0 top-[40%] md:top-[35%] md:left-0 md:h-[400px] lg:top-[23%] lg:left-[5%] lg:w-[70vw] lg:rotate-[-10deg] lg:h-[650px] rotate-[-45deg] md:rotate-[-25deg] max-w-full z-0"
                 
                 viewBox="0 0 1483 654" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_2_9)">
@@ -97,8 +93,13 @@ const Features = () => {
                 </svg>
 
 
+                {/* 
+                
+                
+                */}
+
                 {/* second */}
-                <div className='flex flex-col relative mt-5 lg:mt-10 md:flex-row md:justify-end w-full'>
+                <div className='flex flex-col relative md:mt-0 mt-5 lg:mt-10 md:flex-row md:justify-end w-full'>
                     {/* left */}
                     <div className="flex justify-center md:justify-start items-center w-full md:w-[50%] mb-10 md:mb-0 relative">
 
@@ -184,8 +185,6 @@ const Features = () => {
                                     viewBox="0 0 145 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M144.354 4.03556C144.549 3.8403 144.549 3.52372 144.354 3.32845L141.172 0.146473C140.976 -0.0487893 140.66 -0.0487893 140.464 0.146473C140.269 0.341735 140.269 0.658318 140.464 0.85358L143.293 3.68201L140.464 6.51043C140.269 6.7057 140.269 7.02228 140.464 7.21754C140.66 7.4128 140.976 7.4128 141.172 7.21754L144.354 4.03556ZM0 3.68201V4.18201H144V3.68201V3.18201H0V3.68201Z" fill="black" />
                                 </svg>
-
-                                {/* <BsArrowRight className="inline-block ml-2 cursor-pointer" /> */}
                             </p>
                         </div>
                     </div>

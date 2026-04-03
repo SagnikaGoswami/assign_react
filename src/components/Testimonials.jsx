@@ -48,25 +48,54 @@ const Testimonials = () => {
         <div className='flex flex-col md:flex-row justify-center items-center w-full mx-auto mt-40 mb-40 md:mt-22 md:mb-80'>
 
             {/* left image section */}
-                <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
-                    {
-                        images1.map((image, index)=>(
-                            <img key={index}
+            <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
+                {
+                    images1.map((image, index) => (
+                        <img key={index}
                             src={image.src}
                             alt={image.alt}
-                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`} 
-                             />
-                        ))
-                    }
-                </div>
+                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                        />
+                    ))
+                }
+            </div>
 
 
             {/* head */}
             <div className="w-full md:w-[50%]">
                 {/* heading */}
                 <h1 className="w-full mb-3 md:mb-10 lg:text-[56px] lg:leading-[66px] md:text-[36px] md:leading-[46px] font-['Gerbil'] font-[400] text-center">
-                    What our customer
-                    says About Us
+
+                    <span className="relative inline-block mx-2 lg:mx-10">
+                    <span className="relative z-10 px-3">What</span>
+                    <svg
+                        className="absolute left-[15px] md:left-[26px] lg:left-[28px] top-1/2 lg:top-[35px] -translate-y-1/2 -translate-x-[15%] w-full  lg:w-[4.2em] h-[1.2em] rounded-full z-0"
+                        viewBox="0 0 456 109"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                    >
+                        <rect width="456" height="109" rx="54.5" fill="#D7EEDD" />
+                    </svg>
+                </span>
+                    
+                    
+                    our customer
+                    says
+
+                    
+                    <span className="relative inline-block pb-2 md:pb-7 ml-1 md:mr-4 md:ml-8">
+                        About Us
+
+                        <svg
+                            className="absolute left-0 bottom-0.1 w-full"
+                            viewBox="0 0 595 56"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M72.1335 3H538.634L0.133545 27H594.134L293.134 53" stroke="#FFC250" strokeWidth="6" />
+                        </svg>
+                    </span>
                 </h1>
 
                 {/* message */}
@@ -92,17 +121,17 @@ const Testimonials = () => {
             </div>
 
             {/* right image section */}
-                <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
-                    {
-                        images2.map((image, index)=>(
-                            <img key={index}
+            <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
+                {
+                    images2.map((image, index) => (
+                        <img key={index}
                             src={image.src}
                             alt={image.alt}
-                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`} 
-                             />
-                        ))
-                    }
-                </div>
+                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                        />
+                    ))
+                }
+            </div>
         </div>
     )
 }
