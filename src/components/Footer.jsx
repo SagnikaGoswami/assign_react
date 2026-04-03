@@ -41,7 +41,7 @@ const Footer = () => {
                 </button>
             </div>
 
-            <hr className='w-[80%] border-t-2 border-gray-500 mb-12 mt-5' />
+            <hr className='w-[90%] border-t-2 border-gray-500 mb-12 mt-5' />
 
             <footer className="px-10 py-12">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-10">

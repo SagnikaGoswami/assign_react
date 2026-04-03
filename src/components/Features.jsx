@@ -2,13 +2,13 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Features = () => {
     return (
-        <div>
-            <div className='flex flex-col justify-between w-[88%] mx-auto min-h-screen lg:min-h-[650px]'>
+        <div className="mb-40 md:mb-62">
+            <div className='flex flex-col justify-between w-[88%] mx-auto min-h-screen lg:min-h-[650px] '>
                 {/* first */}
-                <div className='flex flex-col md:flex-row md:justify-end w-full'>
+                <div className='flex flex-col md:flex-row md:justify-end w-full mb-20 md:mb-30'>
                     {/* left */}
                     <div className=' w-full md:w-[70%]  flex justify-start items-center'>
-                        <div className='w-full flex flex-col justify-center'>
+                        <div className='w-full flex flex-col justify-center gap-y-3 md:gap-y-6'>
                             <p className="font-[400] text-[30px] md:text-[60px] lg:text-[56px] leading-[38px] md:leading-[75px] lg:leading-[76px] font-['Gerbil'] tracking-normal text-left">
                                 Tomorrow should
                                 be better than today
@@ -27,7 +27,7 @@ const Features = () => {
                     </div>
 
                     {/* right */}
-                    <div className='flex justify-center md:justify-end items-center w-full md:w-[50%] mt-10 md:mt-0'>
+                    <div className='flex justify-center md:justify-end items-center w-full  md:w-[50%] mt-10 md:mt-0'>
                         <img src="/images/right.png" alt=""
                         className="h-60 w-60 md:h-80 md:w-80 lg:h-95 lg:w-95 rounded-full object-cover border-4 border-white"
                         />
@@ -45,7 +45,7 @@ const Features = () => {
 
                     {/* right */}
                     <div className=' w-full md:w-[70%]  flex justify-start md:justify-end items-center relative'>
-                        <div className=' w-full  flex flex-col justify-center'>
+                        <div className=' w-full  flex flex-col justify-center gap-y-3 md:gap-y-6'>
                             <p className="font-[400] text-[30px] md:text-[60px] lg:text-[56px] leading-[38px] md:leading-[75px] lg:leading-[76px] font-['Gerbil'] tracking-normal text-left">
                                 See how we can help you progress
                             </p>

@@ -21,7 +21,7 @@ const Services = () => {
     ]
 
     return (
-        <div className="w-[90%]  mx-auto mt-20">
+        <div className="w-[90%]  mx-auto mt-20 lg:mb-60">
             {/* heading */}
             <h1 className="mb-10 w-[65%] text-left font-[400] text-[30px] md:text-[60px] lg:text-[100px] leading-[38px] md:leading-[75px] lg:leading-[126px] font-['Gerbil'] tracking-normal text-center">
                 What we can
