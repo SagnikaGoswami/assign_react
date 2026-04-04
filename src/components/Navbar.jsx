@@ -42,9 +42,15 @@ const Navbar = () => {
                         {pages.map((page, index) => (
                             <li
                                 key={index}
-                                className="text-[18px] leading-[24px]"
+                                className="text-[18px] leading-[24px] hover:text-gray-700 transition-colors duration-300 ease-in-out"
                             >
-                                {page}
+
+                                <Link
+                                    to={page.toLowerCase() === "home" ? "/" : `/${page.toLowerCase()}`}
+                                    className="block w-full"
+                                >
+                                    {page}
+                                </Link>
                             </li>
                         ))}
                     </ul>

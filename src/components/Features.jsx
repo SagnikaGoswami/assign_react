@@ -1,6 +1,14 @@
+import { motion } from "motion/react"
+
 const Features = () => {
     return (
-        <div className="mb-40 md:mb-62 w-full pt-16 relative overflow-hidden">
+        <motion.div
+
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+
+            className="mb-40 md:mb-62 w-full pt-16 relative overflow-hidden">
             <div className='flex flex-col md:min-h-[400px] justify-between w-[90%] mx-auto min-h-screen lg:min-h-[650px] '>
                 {/* first */}
                 <div className='flex flex-col md:flex-row md:justify-end w-full mb-20 md:mb-30 '>
@@ -195,7 +203,7 @@ const Features = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

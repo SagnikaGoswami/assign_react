@@ -1,4 +1,5 @@
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
+import { motion } from "motion/react"
 
 const Testimonials = () => {
 
@@ -61,30 +62,34 @@ const Testimonials = () => {
     ]
 
     return (
-        <div className='flex flex-col md:flex-row justify-center items-center w-full mx-auto mt-40 mb-40 md:mt-22 md:mb-80'>
+        <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className='flex flex-col md:flex-row justify-center items-center w-full mx-auto mt-40 mb-40 md:mt-22 md:mb-80'>
 
             {/* left image section */}
             <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
-                    {images1.map((image, index) => (
-                        image.type === "img" ? (
-                            <img
-                                key={index}
-                                src={image.src}
-                                alt={image.alt}
-                                className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
-                            />
-                        ) : (
-                            <svg
-                                key={index}
-                                className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
-                                viewBox="0 0 226 226"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <circle cx="113" cy="113" r="109" fill="gray" stroke="white" strokeWidth="8" />
-                            </svg>
-                        )
-                    ))}
-                </div>
+                {images1.map((image, index) => (
+                    image.type === "img" ? (
+                        <img
+                            key={index}
+                            src={image.src}
+                            alt={image.alt}
+                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                        />
+                    ) : (
+                        <svg
+                            key={index}
+                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                            viewBox="0 0 226 226"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="113" cy="113" r="109" fill="gray" stroke="white" strokeWidth="8" />
+                        </svg>
+                    )
+                ))}
+            </div>
 
 
             {/* head */}
@@ -162,27 +167,27 @@ const Testimonials = () => {
             </div> */}
 
             <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
-                    {images2.map((image, index) => (
-                        image.type === "img" ? (
-                            <img
-                                key={index}
-                                src={image.src}
-                                alt={image.alt}
-                                className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
-                            />
-                        ) : (
-                            <svg
-                                key={index}
-                                className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
-                                viewBox="0 0 226 226"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <circle cx="113" cy="113" r="109" fill="gray" stroke="white" strokeWidth="8" />
-                            </svg>
-                        )
-                    ))}
-                </div>
-        </div>
+                {images2.map((image, index) => (
+                    image.type === "img" ? (
+                        <img
+                            key={index}
+                            src={image.src}
+                            alt={image.alt}
+                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                        />
+                    ) : (
+                        <svg
+                            key={index}
+                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                            viewBox="0 0 226 226"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="113" cy="113" r="109" fill="gray" stroke="white" strokeWidth="8" />
+                        </svg>
+                    )
+                ))}
+            </div>
+        </motion.div>
     )
 }
 

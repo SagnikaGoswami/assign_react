@@ -1,3 +1,5 @@
+import { motion } from "motion/react"
+
 const HeroSection = () => {
 
     const images = [
@@ -50,7 +52,11 @@ const HeroSection = () => {
 
 
     return (
-        <div className="mb-20 md:mb-32 ">
+        <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-20 md:mb-32 ">
 
             <div className="w-full px-4 mt-20 relative">
                 {/* head section*/}
@@ -88,10 +94,15 @@ const HeroSection = () => {
                             </span>
                         </span>
 
-                        <svg className="absolute right-[20px] bottom-[85%] w-[50px] h-[60px] md:right-[20px]  md:bottom-[72%] lg:right-[12px] lg:bottom-[70%] lg:w-[117px] lg:h-[146px] md:w-[85px] md:h-[106px]"
+                        {/* ellipse */}
+                        <motion.svg
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="absolute right-[20px] bottom-[85%] w-[50px] h-[60px] md:right-[20px]  md:bottom-[72%] lg:right-[12px] lg:bottom-[70%] lg:w-[117px] lg:h-[146px] md:w-[85px] md:h-[106px] "
                             width="117" height="146" viewBox="0 0 117 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M77.8783 -4.93067e-06C86.7352 5.11355 94.4983 11.9216 100.724 20.0353C106.95 28.149 111.517 37.4095 114.164 47.2882C116.811 57.1668 117.486 67.4701 116.151 77.6097C114.816 87.7494 111.497 97.5268 106.384 106.384C101.27 115.241 94.4622 123.004 86.3484 129.23C78.2347 135.455 68.9742 140.022 59.0955 142.669C49.2169 145.316 38.9136 145.992 28.774 144.657C18.6344 143.322 8.85694 140.003 -7.20974e-06 134.889L38.9391 67.4446L77.8783 -4.93067e-06Z" fill="#934CEC" />
-                        </svg>
+                        </motion.svg>
 
 
                         the
@@ -109,28 +120,54 @@ const HeroSection = () => {
                         </span>
                         Quo with
                     </p>
-                    <p className="font-[400] text-[16px] md:text-[20px] lg:text-[24px] leading-[24px] md:leading-[30px] lg:leading-[36px] font-['Satoshi-Regular'] tracking-normal text-center mt-5 w-[90%] md:w-[80%] lg:w-[70%] lg:mt-25 mx-auto">
+
+                    <motion.p
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="font-[400] text-[16px] md:text-[20px] lg:text-[24px] leading-[24px] md:leading-[30px] lg:leading-[36px] font-['Satoshi-Regular'] tracking-normal text-center mt-5 w-[90%] md:w-[80%] lg:w-[70%] lg:mt-25 mx-auto">
                         We are a team of strategists, designers communicators, researchers. Together,
                         we belive that progress only happens when you refuse to play things safe.
-                    </p>
+                    </motion.p>
                 </div>
 
                 {/* vectors */}
-                <svg className="absolute left-0 top-[45%] lg:left-0 lg:top-[40%] lg:w-[73px] lg:h-[366px] md:h-[250px] h-[150px]"
-                viewBox="0 0 73 366" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M-0.125563 3.81958C32.8912 14.0867 91.0122 45.1979 59.3623 87.5062C19.8 140.391 -8.5 121.794 -8.5 157.245C-8.5 192.696 44.6348 192.696 44.6348 268.246C44.6348 328.686 2.95478 362.393 -8.5 361.812" stroke="#FF7171" stroke-width="8" />
-                </svg>
+                <motion.svg
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+                    className="absolute left-0 top-[45%] lg:left-0 lg:top-[40%] lg:w-[73px] lg:h-[366px] md:h-[250px] h-[150px]"
+                    viewBox="0 0 73 366"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        d="M-0.125563 3.81958C32.8912 14.0867 91.0122 45.1979 59.3623 87.5062C19.8 140.391 -8.5 121.794 -8.5 157.245C-8.5 192.696 44.6348 192.696 44.6348 268.246C44.6348 328.686 2.95478 362.393 -8.5 361.812"
+                        stroke="#FF7171"
+                        strokeWidth="8"
+                    />
+                </motion.svg>
 
-                <svg className="absolute left-[2%] top-[45%] lg:top-[40%] lg:w-[84px] lg:h-[355px] md:h-[250px] h-[150px]"
+                <motion.svg
+                    initial={{ opacity: 0, x: 100 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="absolute left-[2%] top-[45%] lg:top-[40%] lg:w-[84px] lg:h-[355px] md:h-[250px] h-[150px]"
                     viewBox="0 0 84 355" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.99996 3.81927C36.9367 14.0704 103.271 45.1331 71.6979 87.3753C32.2314 140.178 4 121.61 4 157.005C4 192.4 57.006 192.4 57.006 267.833C57.006 328.179 15.427 351.389 4 350.809" stroke="#0E0E0E" stroke-width="8" />
-                </svg>
+                </motion.svg>
 
 
 
 
                 {/* image section */}
-                <div className='absolute w-[90%] mx-auto md:mt-25 lg:mt-25 relative h-[300px] md:h-[400px] '>
+                <motion.div
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    whileHover={{ scale: 1.01 }}
+                    whileTap={{ scale: 0.99 }}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className='absolute w-[90%] mx-auto md:mt-25 lg:mt-25 relative h-[300px] md:h-[400px] '>
                     {images.map((image, index) => (
                         image.type === "img" ? (
                             <img
@@ -140,8 +177,7 @@ const HeroSection = () => {
                                 className={`absolute w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full object-cover border-4 border-white ${image.position}`}
                             />
                         ) : (
-                            <svg
-                                key={index}
+                            <svg key={index}
                                 className={`absolute w-20 h-20 md:w-32 md:h-32 lg:w-40 lg:h-40 ${image.position}`}
                                 viewBox="0 0 226 226"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -150,12 +186,12 @@ const HeroSection = () => {
                             </svg>
                         )
                     ))}
-                </div>
+                </motion.div>
 
 
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 
