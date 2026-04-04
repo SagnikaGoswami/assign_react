@@ -20,9 +20,11 @@ const Services = () => {
     ]
 
     return (
-        <div className="w-[90%]  mx-auto mt-20 lg:mb-60 relative overflow-hidden">
+        <div className="w-full mx-auto mt-20 lg:mb-60 relative overflow-hidden ">
             {/* heading */}
-            <h1 className=" mb-10 w-[65%] text-left font-[400] text-[30px] md:text-[60px] lg:text-[100px] leading-[38px] md:leading-[75px] lg:leading-[126px] font-['Gerbil'] tracking-normal text-center">
+            <div className="w-[90%] mx-auto">
+
+                <h1 className=" mb-10 w-[65%]  text-left font-[400] text-[30px] md:text-[60px] lg:text-[100px] leading-[38px] md:leading-[75px] lg:leading-[126px] font-['Gerbil'] tracking-normal text-center">
                 What we
 
                 <span className="relative inline-block mx-1 lg:mx-10">
@@ -38,8 +40,10 @@ const Services = () => {
                     </svg>
                 </span>
 
+{/* md:w-[390px] */}
+{/* w-[150px] */}
                 {/* vector */}
-                <svg className="absolute inset-x-0 w-[150px] bottom-[80%] left-[60%]  md:bottom-[82%] md:left-[55%] md:w-[390px] lg:w-[564px] lg:h-[654px] lg:bottom-[45%] lg:left-[63%] lg:rotate-0"
+                <svg className="absolute inset-x-0 h-[650px] w-[400px]  bottom-[50%] rotate-[15deg] md:rotate-[10deg] left-[60%]  md:bottom-[58%] md:left-[55%]  lg:w-[1483px] lg:h-[554px] lg:bottom-[60%] md:w-[654px] lg:left-[33%] lg:rotate-0"
                     viewBox="0 0 864 654" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_1_158)">
                         <path d="M1488.65 134.467C1446.64 22.3687 1055.93 -89.3365 963 120.86C835.832 408.503 777.269 398.935 693.689 397.279C610.11 395.623 306.809 225.312 181.153 337.967C41.357 463.299 144.653 654.467 12.6534 618.727" stroke="#FF6D6D" stroke-width="5" />
@@ -104,6 +108,9 @@ const Services = () => {
                     <hr className='w-full border-t-2 border-gray-300 mb-5 mt-5' />
                 </>
             ))}
+
+            </div>
+            
         </div>
     )
 }

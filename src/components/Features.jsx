@@ -1,9 +1,9 @@
 const Features = () => {
     return (
-        <div className="mb-40 md:mb-62">
-            <div className='flex flex-col overflow-hidden md:min-h-[400px] relative justify-between w-[88%] mx-auto min-h-screen lg:min-h-[650px] '>
+        <div className="mb-40 md:mb-62 w-full pt-16 relative overflow-hidden">
+            <div className='flex flex-col md:min-h-[400px] justify-between w-[90%] mx-auto min-h-screen lg:min-h-[650px] '>
                 {/* first */}
-                <div className='flex flex-col relative md:flex-row md:justify-end w-full mb-20 md:mb-30 overflow-hidden'>
+                <div className='flex flex-col md:flex-row md:justify-end w-full mb-20 md:mb-30 '>
                     {/* left */}
                     <div className=' w-full md:w-[70%]  flex justify-start items-center '>
                         <div className='w-full flex flex-col justify-center gap-y-3 md:gap-y-6'>
@@ -58,10 +58,12 @@ const Features = () => {
                     {/* right */}
                     <div className='flex justify-center md:justify-end items-center w-full  md:w-[50%] mt-10 md:mt-0'>
                         <img src="/images/right.png" alt=""
-                            className="h-60 w-60 md:h-80 md:w-80 lg:h-95 lg:w-95 rounded-full object-cover border-4 border-white z-10"
+                            className="h-60 w-60 md:h-60 md:w-60 lg:h-95 lg:w-95 rounded-full object-cover border-4 border-white z-10"
                         />
 
-                        <svg className="w-[100px] h-[120px] left-[65%] bottom-[25%] md:w-[150px] md:h-[170px] lg:w-[274px] lg:h-[267px] md:bottom-[55%] md:left-[85%] z-0 absolute lg:bottom-[25%] lg:left-[90%]"
+                        {/* lg:left-[85%] */}
+                        {/* square polygon */}
+                        <svg className="absolute w-[100px] h-[120px] bottom-[65%] right-[20%] md:w-[130px] md:h-[170px] lg:w-[200px] lg:h-[267px] md:bottom-[75%] md:left-[81%] md:rotate-[-5deg] z-0  lg:bottom-[73%] lg:left-[83%]"
                             viewBox="0 0 233 227" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M45.3254 -2.02656e-06L232.277 40.5018L186.952 226.343L4.78625e-05 185.841L45.3254 -2.02656e-06Z" fill="#FF7171" />
                         </svg>
@@ -69,12 +71,13 @@ const Features = () => {
                     </div>
                 </div>
 
-{/* width="1483" height="654"  */}
-                <svg 
+                {/* width="1483" height="654"  */}
+                {/* vector */}
+                <svg
 
-                className="absolute inset-x-0 top-[40%] md:top-[35%] md:left-0 md:h-[400px] lg:top-[23%] lg:left-[5%] lg:w-[70vw] lg:rotate-[-10deg] lg:h-[650px] rotate-[-45deg] md:rotate-[-25deg] max-w-full z-0"
-                
-                viewBox="0 0 1483 654" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    className="absolute inset-x-0 h-[650px] w-[400px] left-[15%] top-[25%] md:top-0 md:left-[8%] md:h-[1320px] md:w-[954px] lg:top-[28%] lg:left-[8%] lg:w-[1483px] lg:rotate-0  lg:h-[604px] rotate-[-25deg] md:rotate-[-15deg] max-w-full z-0"
+
+                    viewBox="0 0 1483 654" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_2_9)">
                         <path d="M1488.65 134.467C1446.64 22.3687 1055.93 -89.3365 963 120.86C835.832 408.503 777.269 398.935 693.689 397.279C610.11 395.623 306.809 225.312 181.153 337.967C41.357 463.299 144.653 654.467 12.6534 618.727" stroke="#FF6D6D" stroke-width="5" />
                     </g>
@@ -99,12 +102,13 @@ const Features = () => {
                 */}
 
                 {/* second */}
-                <div className='flex flex-col relative md:mt-0 mt-5 lg:mt-10 md:flex-row md:justify-end w-full'>
+                <div className='flex flex-col  md:mt-0 mt-5 lg:mt-10 md:flex-row md:justify-end w-full'>
                     {/* left */}
-                    <div className="flex justify-center md:justify-start items-center w-full md:w-[50%] mb-10 md:mb-0 relative">
+                    <div className="flex justify-center md:justify-start items-center w-full md:w-[50%] mb-10 md:mb-0">
 
+                        {/* left triangular polygon */}
                         <svg
-                            className="absolute w-[100px] h-[90px] left-[5%] top-0 md:w-[170px] md:h-[120px] lg:w-[238px] lg:h-[201px] lg:left-0 lg:bottom-[65%] md:right-[65%] md:bottom-[60%] z-0"
+                            className="absolute w-[100px] h-[90px] left-[8%] bottom-[35%] md:w-[170px] md:h-[120px] lg:w-[238px] lg:h-[201px] lg:left-[3%] lg:top-[55%] md:left-[1%] md:top-[65%] z-0"
                             viewBox="0 0 238 201"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -115,11 +119,12 @@ const Features = () => {
                         <img
                             src="/images/left.png"
                             alt=""
-                            className="h-60 w-60 md:h-80 md:w-80 lg:h-[95] lg:w-[95] rounded-full object-cover border-4 border-white z-10"
+                            className="h-60 w-60 md:h-60 md:w-60 lg:h-95 lg:w-95 rounded-full object-cover border-4 border-white z-10"
                         />
 
+                        {/* right triangular polygon */}
                         <svg
-                            className="absolute w-[100px] h-[90px]  md:w-[170px] md:h-[120px] lg:w-[238px] lg:h-[201px] top-[68%] left-[60%] md:left-[40%] md:top-[60%] lg:left-[30%] lg:top-[45%] z-20"
+                            className="absolute w-[100px] h-[90px]  md:w-[170px] md:h-[120px] lg:w-[238px] lg:h-[191px] top-[70%] left-[60%] md:left-[15%] md:top-[80%] lg:left-[20%] lg:top-[80%] z-20"
                             viewBox="0 0 238 201"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"

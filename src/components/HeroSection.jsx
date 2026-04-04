@@ -1,106 +1,5 @@
 const HeroSection = () => {
 
-    // 6 items
-    // const images = [
-    //     {
-    //         src: '/images/img1.png',
-    //         alt: 'img1',
-    //         position: "top-1/2 left-0 -translate-y-1/2"
-    //     },
-    //     {
-    //         alt: 'img1',
-    //         position: "top-1/3 left-[93px] lg:left-[7em] -translate-y-1/2"
-    //     },
-    //     {
-    //         src: '/images/img3.png',
-    //         alt: 'img3',
-    //         position: "top-[12%] left-[36%] lg:top-0 lg:left-[40%] z-10"
-    //     },
-    //     {
-    //         src: '/images/img3.png',
-    //         alt: 'img3',
-    //         position: "top-[33%] left-[44%] lg:left-[48%]"
-    //     },
-    //     {
-    //         src: '/images/img6.png',
-    //         alt: 'img6',
-    //         position: "bottom-1/2 left-[66%] lg:left-[82%] bottom-1/2 z-10" // this one
-    //     },
-    //     {
-    //         src: '/images/img8.png',
-    //         alt: 'img8',
-    //         position: "top-1/2 right-0 -translate-y-1/2"
-    //     },
-    //     {
-    //         src: '/images/img8.png',
-    //         alt: 'img8',
-    //         position: "top-1/2 right-0 -translate-y-1/2"
-    //     },
-    //     {
-    //         alt: 'img8',
-    //         position: "top-1/2 right-0 -translate-y-1/2"
-    //     },
-    //     {
-    //         alt: 'img8',
-    //         position: "top-1/2 right-0 -translate-y-1/2"
-    //     },
-
-    // ]
-
-    // 8 it
-    // const images = [
-    //     {
-    //         type: "img",
-    //         src: "/images/img1.png",
-    //         alt: "img1",
-    //         position: "top-1/2 left-0 -translate-y-1/2"
-    //     },
-    //     {
-    //         type: "svg",
-    //         alt: "circle",
-    //         position: "top-1/3 left-[7%] -translate-y-1/2"
-    //     },
-    //     {
-    //         type: "img",
-    //         src: "/images/img3.png",
-    //         alt: "img3",
-    //         position: "top-[12%] left-[36%] lg:top-0 lg:left-[26%] z-10"
-    //     },
-    //     {
-    //         type: "svg",
-    //         src: "/images/img3.png",
-    //         alt: "img3",
-    //         position: "top-[12%] left-[36%] lg:top-[40%] lg:left-[33%] z-10"
-    //     },
-    //     {
-    //         type: "svg",
-    //         src: "/images/img3.png",
-    //         alt: "img3",
-    //         position: "top-[12%] left-[36%] lg:top-[10%] lg:left-[48%] z-10"
-    //     },
-    //     {
-    //         type: "svg",
-    //         src: "/images/img3.png",
-    //         alt: "img3",
-    //         position: "bottom-1/2 left-[66%] top-0 lg:left-[75%] z-10"
-
-    //     },
-    //     {
-    //         type: "img",
-    //         src: "/images/img8.png",
-    //         alt: "img3",
-    //         position: "top-[12%] left-[36%] lg:top-[33%] lg:left-[88%] z-10"
-    //         // position: "top-[12%] left-[36%] lg:top-1/2 lg:left-[75%] z-10"
-    //     },
-    //     {
-    //         type: "img",
-    //         src: "/images/img6.png",
-    //         alt: "img6",
-    //         position: "top-[12%] left-[36%] lg:top-[30%] lg:left-[56%] z-10"
-    //         // position: "bottom-1/2 left-[66%] lg:left-[82%] z-10"
-    //     }
-    // ]
-
     const images = [
         {
             type: "img",
@@ -146,12 +45,12 @@ const HeroSection = () => {
             alt: "img6",
             position: "top-[60%] left-[30%] z-0 md:top-[35%] md:left-[60%] md:z-10 lg:top-[30%] lg:left-[56%] lg:z-10"
         }
-    ];
+    ]
 
 
 
     return (
-        <div className="mb-20 md:mb-42 ">
+        <div className="mb-20 md:mb-32 ">
 
             <div className="w-full px-4 mt-20 relative">
                 {/* head section*/}

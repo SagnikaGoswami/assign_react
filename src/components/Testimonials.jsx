@@ -4,43 +4,59 @@ const Testimonials = () => {
 
     const images1 = [
         {
+            type: "svg",
+            alt: 'img2',
+            position: "bottom-1/3 left-1/3 -translate-y-1/2",
+            size: "w-20 h-20 md:w-24 md:h-24 lg:w-35 lg:h-35"
+        },
+        {
+            type: "img",
             src: '/images/img1_left.png',
             alt: 'img1',
-            position: "bottom-1/3 left-25 -translate-y-1/2",
-            size: "w-20 h-20 md:w-24 md:h-24 lg:w-20 lg:h-20"
+            position: "top-1/3 md:left-[1em] md:top-0 left-[5em] lg:top-[25%]",
+            size: "w-15 h-15"
         },
         {
-            src: '/images/img1.png',
-            alt: 'img1',
-            position: "top-1/3 left-[10%] lg:top-[25%] -translate-y-1/2",
-            size: "w-24 h-24 md:w-32 md:h-32 lg:w-15 lg:h-15"
-        },
-        {
+            type: "img",
             src: '/images/img3_left.png',
             alt: 'img3',
-            position: "top-[12%] left-[36%] lg:top-0 lg:left-[30%] z-10",
-            size: "w-20 h-20 md:w-24 md:h-24 lg:w-50 lg:h-50"
+            position: "top-[12%] left-[36%] md:left-[5em] lg:top-0 lg:left-[30%] z-10",
+            size: "w-20 h-20 md:w-24 md:h-24 lg:w-40 lg:h-40"
+        },
+        {
+            type: "svg",
+            alt: "circle",
+            position: "top-[30%] left-[5%] md:top-[5em] md:left-[10%] lg:top-[12em] lg:left-[2em]",
+            size: "w-20 h-20 md:w-24 md:h-24 lg:w-35 lg:h-35"
         },
     ]
 
     const images2 = [
         {
-            src: '/images/img3.png',
-            alt: 'img3',
-            position: "bottom-1/3 right-25 -translate-y-1/2",
-            size: "w-20 h-20 md:w-24 md:h-24 lg:w-20 lg:h-20"
-        },
-        {
-            src: '/images/img8.png',
-            alt: 'img8',
-            position: "top-1/3 right-[10%] lg:top-[25%] -translate-y-1/2",
-            size: "w-24 h-24 md:w-32 md:h-32 lg:w-15 lg:h-15"
-        },
-        {
+            type: "img",
             src: '/images/img6.png',
             alt: 'img6',
-            position: "top-[12%] right-[36%] lg:top-0 lg:right-[30%] z-10",
-            size: "w-20 h-20 md:w-24 md:h-24 lg:w-50 lg:h-50"
+            position: "top-[3em] right-[6em] lg:top-[2em] lg:right-[8em] z-10",
+            size: "w-20 h-20 lg:w-35 lg:h-35"
+        },
+        {
+            type: "img",
+            src: '/images/img8.png',
+            alt: 'img8',
+            position: "top-1/3 right-[8em] bottom-[12em] lg:right-[10em] lg:bottom-[10em] -translate-y-1/2",
+            size: "w-15 h-15"
+        },
+        {
+            type: "svg",
+            alt: "circle",
+            position: "bottom-1/3 right-1/3 -translate-y-1/2",
+            size: "w-20 h-20 md:w-24 md:h-24 lg:w-35 lg:h-35"
+        },
+        {
+            type: "svg",
+            alt: "circle",
+            position: "top-[30%] left-[5em] md:top-[8em] md:left-[10%] lg:top-[12em] lg:left-[3em]",
+            size: "w-20 h-20 md:w-34 md:h-34 lg:w-50 lg:h-50"
         },
     ]
 
@@ -49,41 +65,51 @@ const Testimonials = () => {
 
             {/* left image section */}
             <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
-                {
-                    images1.map((image, index) => (
-                        <img key={index}
-                            src={image.src}
-                            alt={image.alt}
-                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
-                        />
-                    ))
-                }
-            </div>
+                    {images1.map((image, index) => (
+                        image.type === "img" ? (
+                            <img
+                                key={index}
+                                src={image.src}
+                                alt={image.alt}
+                                className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                            />
+                        ) : (
+                            <svg
+                                key={index}
+                                className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                                viewBox="0 0 226 226"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle cx="113" cy="113" r="109" fill="gray" stroke="white" strokeWidth="8" />
+                            </svg>
+                        )
+                    ))}
+                </div>
 
 
             {/* head */}
-            <div className="w-full md:w-[50%]">
+            <div className="w-full md:w-[50%] ">
                 {/* heading */}
                 <h1 className="w-full mb-3 md:mb-10 lg:text-[56px] lg:leading-[66px] md:text-[36px] md:leading-[46px] font-['Gerbil'] font-[400] text-center">
 
-                    <span className="relative inline-block mx-2 lg:mx-10">
-                    <span className="relative z-10 px-3">What</span>
-                    <svg
-                        className="absolute left-[15px] md:left-[26px] lg:left-[28px] top-1/2 lg:top-[35px] -translate-y-1/2 -translate-x-[15%] w-full  lg:w-[4.2em] h-[1.2em] rounded-full z-0"
-                        viewBox="0 0 456 109"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        preserveAspectRatio="none"
-                    >
-                        <rect width="456" height="109" rx="54.5" fill="#D7EEDD" />
-                    </svg>
-                </span>
-                    
-                    
+                    <span className="relative inline-block mx-1 lg:mx-10">
+                        <span className="relative z-10 px-3">What</span>
+                        <svg
+                            className="absolute left-[15px] md:left-[26px] lg:left-[28px] top-1/2 lg:top-[35px] -translate-y-1/2 -translate-x-[15%] w-full  lg:w-[4.2em] h-[1.2em] rounded-full z-0"
+                            viewBox="0 0 456 109"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            preserveAspectRatio="none"
+                        >
+                            <rect width="456" height="109" rx="54.5" fill="#D7EEDD" />
+                        </svg>
+                    </span>
+
+
                     our customer
                     says
 
-                    
+
                     <span className="relative inline-block pb-2 md:pb-7 ml-1 md:mr-4 md:ml-8">
                         About Us
 
@@ -101,8 +127,8 @@ const Testimonials = () => {
                 {/* message */}
                 <div className='relative rounded-3xl w-[90%] mx-auto p-8 md:p-16 text-center bg-[#D7EEDD4D]'>
 
-                    {/* starting quote icon */}
-                    <ImQuotesLeft className="absolute top-4 md:top-14 left-4 md:left-5 lg:left-7 text-gray-300 text-xl md:text-2xl" size={35} md:size={45} />
+                    <ImQuotesLeft className="absolute object-contain text-3xl top-6 left-2 text-gray-300 lg:text-[50px]" />
+
 
                     {/* message */}
                     <p className=" text-gray-800 text-20px leading-relaxed font-[400] lg:leading-[42px] lg:text-[30px] font-['Satoshi-Regular'] tracking-normal text-center">
@@ -115,13 +141,15 @@ const Testimonials = () => {
                     </p>
 
                     {/* ending quote icon */}
-                    <ImQuotesRight className="absolute bottom-4 md:bottom-16 right-24 md:right-40 lg:right-72 lg:bottom-16 text-gray-300 text-xl md:text-2xl" size={35} md:size={45} />
+
+                    <ImQuotesRight className="absolute bottom-0 right-0 object-contain bottom-7 right-2 text-3xl text-gray-300  lg:text-[50px]" />
+
 
                 </div>
             </div>
 
             {/* right image section */}
-            <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
+            {/* <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
                 {
                     images2.map((image, index) => (
                         <img key={index}
@@ -131,7 +159,29 @@ const Testimonials = () => {
                         />
                     ))
                 }
-            </div>
+            </div> */}
+
+            <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
+                    {images2.map((image, index) => (
+                        image.type === "img" ? (
+                            <img
+                                key={index}
+                                src={image.src}
+                                alt={image.alt}
+                                className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                            />
+                        ) : (
+                            <svg
+                                key={index}
+                                className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
+                                viewBox="0 0 226 226"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle cx="113" cy="113" r="109" fill="gray" stroke="white" strokeWidth="8" />
+                            </svg>
+                        )
+                    ))}
+                </div>
         </div>
     )
 }
