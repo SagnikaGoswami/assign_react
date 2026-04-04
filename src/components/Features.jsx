@@ -44,7 +44,6 @@ const Features = () => {
                                         <rect width="456" height="109" rx="54.5" fill="#D7EEDD" />
                                     </svg>
                                 </span>
-
                             </p>
 
                             <p className="  font-[400] text-[16px] md:text-[20px] lg:text-[24px] leading-[24px] md:leading-[30px] lg:leading-[36px] font-['Satoshi-Regular'] tracking-normal text-left w-full">
@@ -65,7 +64,6 @@ const Features = () => {
 
                     {/* right */}
                     <motion.div
-
                         className='flex justify-center md:justify-end items-center w-full  md:w-[50%] mt-10 md:mt-0'>
                         <motion.img src="/images/right.png" alt=""
                             initial={{ opacity: 0, y: 100 }}
@@ -74,7 +72,6 @@ const Features = () => {
                             className="h-60 w-60 md:h-60 md:w-60 lg:h-95 lg:w-95 rounded-full object-cover border-4 border-white z-10"
                         />
 
-                        {/* lg:left-[85%] */}
                         {/* square polygon */}
                         <svg className="absolute w-[100px] h-[120px] bottom-[65%] right-[20%] md:w-[130px] md:h-[170px] lg:w-[200px] lg:h-[267px] md:bottom-[75%] md:left-[81%] md:rotate-[-5deg] z-0  lg:bottom-[73%] lg:left-[83%]"
                             viewBox="0 0 233 227" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,15 +81,12 @@ const Features = () => {
                     </motion.div>
                 </div>
 
-                {/* width="1483" height="654"  */}
                 {/* vector */}
                 <motion.svg
                     initial={{ opacity:0, width: 0 }}
                     whileInView={{ opacity:1, width: "99vw" }}
                     transition={{ duration: 0.8, ease: "easeOut", "delay": 1.4 }}
-                    // className="absolute inset-x-0 h-[650px] w-[400px] left-[15%] top-[25%] md:top-0 md:left-[8%] md:h-[1320px] md:w-[954px] lg:top-[28%] lg:left-[8%] lg:w-[1483px] lg:rotate-0  lg:h-[604px] rotate-[-25deg] md:rotate-[-15deg] max-w-full z-0"
                     className="absolute inset-x-0 h-[650px] w-[400px] md:h-[1320px] md:w-[974px] lg:w-[1483px] lg:h-[604px] max-w-full z-0 md:top-[0.7em] md:left-[7em] md:rotate-[-20deg] top-[15em] lg:top-[17em] lg:left-[7em] left-[5em] lg:rotate-0 rotate-[-30deg]"
-
                     viewBox="0 0 1483 654" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_2_9)">
                         <path d="M1488.65 134.467C1446.64 22.3687 1055.93 -89.3365 963 120.86C835.832 408.503 777.269 398.935 693.689 397.279C610.11 395.623 306.809 225.312 181.153 337.967C41.357 463.299 144.653 654.467 12.6534 618.727" stroke="#FF6D6D" stroke-width="5" />
@@ -110,13 +104,7 @@ const Features = () => {
                         </filter>
                     </defs>
                 </motion.svg>
-
-
-                {/* 
                 
-                
-                */}
-
                 {/* second */}
                 <div className='flex flex-col  md:mt-0 mt-5 lg:mt-10 md:flex-row md:justify-end w-full'>
                     {/* left */}

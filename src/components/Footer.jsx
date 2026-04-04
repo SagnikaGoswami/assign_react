@@ -1,5 +1,5 @@
-import { delay } from "motion"
 import { motion, scale } from "motion/react"
+import { delay } from "motion"
 
 const Footer = () => {
 
@@ -60,8 +60,6 @@ const Footer = () => {
                 <path d="M60.9994 227.653C47.1247 219.642 34.9637 208.977 25.2106 196.267C15.4576 183.557 8.30358 169.05 4.15702 153.575C0.0104423 138.099 -1.04745 121.959 1.04373 106.075C3.1349 90.1908 8.33419 74.8742 16.3447 60.9995C24.3553 47.1248 35.0202 34.9638 47.7306 25.2108C60.441 15.4577 74.948 8.3037 90.4232 4.15712C105.898 0.0105539 122.039 -1.04734 137.923 1.04383C153.807 3.13501 169.123 8.3343 182.998 16.3449L121.999 121.999L60.9994 227.653Z" fill="#934CEC" />
             </motion.svg>
 
-
-
             {/* subscribe section */}
             <div className="flex flex-col items-center justify-center w-full md:w-[70%] p-8 md:p-12 mt-23 md:mt-13">
 
@@ -88,7 +86,6 @@ const Footer = () => {
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     whileHover={{ scale: 1.09 }}
                     whileTap={{ scale: 0.90 }}
-
                     className="px-6 py-3 md:px-7 md:py-4 bg-black text-white rounded-full text-sm md:text-base lg:text-[20px] lg:leading-[30px] font-['Satoshi-Bold'] tracking-normal cursor-pointer">
                     Subscribe Now
                 </motion.button>

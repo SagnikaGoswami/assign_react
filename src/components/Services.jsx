@@ -66,8 +66,6 @@ const Services = () => {
                         </defs>
                     </svg>
 
-
-
                     <span className="relative inline-block pb-2 md:pb-7 ml-1 md:mr-4 md:ml-8">
                         offer
 
@@ -80,8 +78,6 @@ const Services = () => {
                             <path d="M72.1335 3H538.634L0.133545 27H594.134L293.134 53" stroke="#FFC250" strokeWidth="6" />
                         </svg>
                     </span>
-
-
                     you!
                 </h1>
 

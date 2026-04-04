@@ -110,14 +110,11 @@ const Testimonials = () => {
                         </svg>
                     </span>
 
-
                     our customer
                     says
 
-
                     <span className="relative inline-block pb-2 md:pb-7 ml-1 md:mr-4 md:ml-8">
                         About Us
-
                         <svg
                             className="absolute left-0 bottom-0.1 w-full"
                             viewBox="0 0 595 56"
@@ -131,11 +128,9 @@ const Testimonials = () => {
 
                 {/* message */}
                 <div
-
                     className='relative rounded-3xl w-[90%] mx-auto p-8 md:p-16 text-center bg-[#D7EEDD4D]'>
 
                     <ImQuotesLeft className="absolute object-contain text-3xl top-6 left-2 text-gray-300 lg:text-[50px]" />
-
 
                     {/* message */}
                     <motion.p
@@ -155,22 +150,8 @@ const Testimonials = () => {
 
                     <ImQuotesRight className="absolute bottom-0 right-0 object-contain bottom-7 right-2 text-3xl text-gray-300  lg:text-[50px]" />
 
-
                 </div>
             </div>
-
-            {/* right image section */}
-            {/* <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
-                {
-                    images2.map((image, index) => (
-                        <img key={index}
-                            src={image.src}
-                            alt={image.alt}
-                            className={`absolute ${image.size} rounded-full object-cover border-4 border-white ${image.position}`}
-                        />
-                    ))
-                }
-            </div> */}
 
             <div className='hidden md:block w-[25%] mx-auto mt-35 lg:mt-25 relative'>
                 {images2.map((image, index) => (

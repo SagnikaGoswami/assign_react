@@ -10,6 +10,7 @@ const Navbar = () => {
     return (
         <div className="mb-30 md:mb-42">
             <nav className="flex justify-between items-center h-16 w-[90%] pt-6 px-6 lg:mx-auto relative">
+
                 {/* logo section */}
                 <div className="font-['Gerbil'] text-[28px] leading-[46px] tracking-normal font-[400]">
                     Elementum
@@ -54,7 +55,6 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-
 
                     {/* menu icon */}
                     <div
