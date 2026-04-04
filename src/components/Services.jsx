@@ -46,7 +46,8 @@ const Services = () => {
                     </span>
 
                     {/* vector */}
-                    <svg className="absolute inset-x-0 h-[650px] w-[400px]  bottom-[50%] rotate-[15deg] md:rotate-[10deg] left-[60%]  md:bottom-[58%] md:left-[55%]  lg:w-[1483px] lg:h-[554px] lg:bottom-[60%] md:w-[654px] lg:left-[33%] lg:rotate-0"
+                    <svg
+                    className="absolute inset-x-0 h-[650px] w-[400px]  bottom-[38%] rotate-[30deg] md:rotate-[10deg] left-[70%]  md:bottom-[58%] md:left-[55%]  lg:w-[1483px] lg:h-[554px] lg:bottom-[60%] md:w-[654px] lg:left-[33%] lg:rotate-0"
                         viewBox="0 0 864 654" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g filter="url(#filter0_d_1_158)">
                             <path d="M1488.65 134.467C1446.64 22.3687 1055.93 -89.3365 963 120.86C835.832 408.503 777.269 398.935 693.689 397.279C610.11 395.623 306.809 225.312 181.153 337.967C41.357 463.299 144.653 654.467 12.6534 618.727" stroke="#FF6D6D" stroke-width="5" />
@@ -89,8 +90,14 @@ const Services = () => {
                 {/* services */}
                 {services.map((service, index) => (
                     <>
-                        <div key={index} className="flex flex-col md:flex-row justify-around md:justify-around items-center w-full mt-3 cursor-pointer">
-                            <p className="w-full  md:w-[23%] font-[400] text-[18px] md:text-[25px] lg:text-[30px] leading-[24px] md:leading-[62px] lg:leading-[42px] font-['Satoshi-Regular'] tracking-normal text-center md:text-left mb-4 md:mb-0">
+                        <motion.div key={index}
+                            initial={{ opacity: 0, y: 100, scale: 1 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            whileHover={{ scale: 1.09 }}
+                            whileTap={{ scale: 0.99 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            className="flex flex-col md:flex-row justify-around md:justify-around items-center w-full mt-3 cursor-pointer ">
+                            <p className="w-full  md:w-[23%] font-[400] text-[18px] md:text-[25px] lg:text-[30px] leading-[24px] md:leading-[62px] lg:leading-[42px] font-['Satoshi-Regular'] tracking-normal text-center md:text-left mb-4 md:mb-0 ">
                                 <Link to={`/services/${service.serviceName}`}>{service.content}</Link>
                             </p>
                             <p className="w-full  md:w-[70%] font-[400] text-[30px] md:pl-12 md:text-[40px] lg:text-[56px] leading-[36px] md:leading-[106px] lg:leading-[116px] font-['Gerbil'] tracking-normal text-center md:text-left mb-4 md:mb-0">
@@ -107,7 +114,7 @@ const Services = () => {
 
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
                         <hr className='w-full border-t-2 border-gray-300 mb-5 mt-5' />
                     </>
                 ))}

@@ -130,20 +130,26 @@ const Testimonials = () => {
                 </h1>
 
                 {/* message */}
-                <div className='relative rounded-3xl w-[90%] mx-auto p-8 md:p-16 text-center bg-[#D7EEDD4D]'>
+                <div
+
+                    className='relative rounded-3xl w-[90%] mx-auto p-8 md:p-16 text-center bg-[#D7EEDD4D]'>
 
                     <ImQuotesLeft className="absolute object-contain text-3xl top-6 left-2 text-gray-300 lg:text-[50px]" />
 
 
                     {/* message */}
-                    <p className=" text-gray-800 text-20px leading-relaxed font-[400] lg:leading-[42px] lg:text-[30px] font-['Satoshi-Regular'] tracking-normal text-center">
+                    <motion.p
+                        initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className=" text-gray-800 text-20px leading-relaxed font-[400] lg:leading-[42px] lg:text-[30px] font-['Satoshi-Regular'] tracking-normal text-center">
                         Elementum delivered the site within the timeline
                         as they requested. In the end, the client found a 50%
                         increase in traffic within days since its launch. They
                         also had an impressive ability to use technologies that
                         the company hasn't used, which have also proved to
                         be easy to use and reliable
-                    </p>
+                    </motion.p>
 
                     {/* ending quote icon */}
 

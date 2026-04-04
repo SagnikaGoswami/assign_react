@@ -64,8 +64,13 @@ const Features = () => {
                     </div>
 
                     {/* right */}
-                    <div className='flex justify-center md:justify-end items-center w-full  md:w-[50%] mt-10 md:mt-0'>
-                        <img src="/images/right.png" alt=""
+                    <motion.div
+
+                        className='flex justify-center md:justify-end items-center w-full  md:w-[50%] mt-10 md:mt-0'>
+                        <motion.img src="/images/right.png" alt=""
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
                             className="h-60 w-60 md:h-60 md:w-60 lg:h-95 lg:w-95 rounded-full object-cover border-4 border-white z-10"
                         />
 
@@ -76,14 +81,17 @@ const Features = () => {
                             <path d="M45.3254 -2.02656e-06L232.277 40.5018L186.952 226.343L4.78625e-05 185.841L45.3254 -2.02656e-06Z" fill="#FF7171" />
                         </svg>
 
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* width="1483" height="654"  */}
                 {/* vector */}
-                <svg
-
-                    className="absolute inset-x-0 h-[650px] w-[400px] left-[15%] top-[25%] md:top-0 md:left-[8%] md:h-[1320px] md:w-[954px] lg:top-[28%] lg:left-[8%] lg:w-[1483px] lg:rotate-0  lg:h-[604px] rotate-[-25deg] md:rotate-[-15deg] max-w-full z-0"
+                <motion.svg
+                    initial={{ opacity:0, width: 0 }}
+                    whileInView={{ opacity:1, width: "99vw" }}
+                    transition={{ duration: 0.8, ease: "easeOut", "delay": 1.4 }}
+                    // className="absolute inset-x-0 h-[650px] w-[400px] left-[15%] top-[25%] md:top-0 md:left-[8%] md:h-[1320px] md:w-[954px] lg:top-[28%] lg:left-[8%] lg:w-[1483px] lg:rotate-0  lg:h-[604px] rotate-[-25deg] md:rotate-[-15deg] max-w-full z-0"
+                    className="absolute inset-x-0 h-[650px] w-[400px] md:h-[1320px] md:w-[974px] lg:w-[1483px] lg:h-[604px] max-w-full z-0 md:top-[0.7em] md:left-[7em] md:rotate-[-20deg] top-[15em] lg:top-[17em] lg:left-[7em] left-[5em] lg:rotate-0 rotate-[-30deg]"
 
                     viewBox="0 0 1483 654" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_2_9)">
@@ -101,7 +109,7 @@ const Features = () => {
                             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_9" result="shape" />
                         </filter>
                     </defs>
-                </svg>
+                </motion.svg>
 
 
                 {/* 
@@ -116,7 +124,7 @@ const Features = () => {
 
                         {/* left triangular polygon */}
                         <svg
-                            className="absolute w-[100px] h-[90px] left-[8%] bottom-[35%] md:w-[170px] md:h-[120px] lg:w-[238px] lg:h-[201px] lg:left-[3%] lg:top-[55%] md:left-[1%] md:top-[65%] z-0"
+                            className="absolute w-[100px] h-[90px] left-[3.8em] bottom-[35%] md:w-[170px] md:h-[120px] lg:w-[238px] lg:h-[201px] lg:left-[3%] lg:top-[55%] md:left-[1%] md:top-[65%] z-0"
                             viewBox="0 0 238 201"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -124,10 +132,13 @@ const Features = () => {
                             <path d="M118.645 0L237.291 200.25H0L118.645 0Z" fill="#FF7171" />
                         </svg>
 
-                        <img
+                        <motion.img
+                            initial={{ opacity: 0, y: 100 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
                             src="/images/left.png"
                             alt=""
-                            className="h-60 w-60 md:h-60 md:w-60 lg:h-95 lg:w-95 rounded-full object-cover border-4 border-white z-10"
+                            className="h-55 w-55 md:h-60 md:w-60 lg:h-95 lg:w-95 rounded-full object-cover border-4 border-white z-10"
                         />
 
                         {/* right triangular polygon */}
@@ -191,7 +202,8 @@ const Features = () => {
                                 digital, comms and social research.
                             </p>
 
-                            <p className="  font-medium text-[12px] md:text-[16px] lg:text-[20px] leading-[12px] md:leading-[18px] lg:leading-[24px] font-['Satoshi-Regular'] tracking-normal text-left w-full mt-3">
+                            <p
+                                className="  font-medium text-[12px] md:text-[16px] lg:text-[20px] leading-[12px] md:leading-[18px] lg:leading-[24px] font-['Satoshi-Regular'] tracking-normal text-left w-full mt-3">
                                 {`Read more`}
 
                                 <svg className="inline-block ml-2 cursor-pointer w-[100px] h-[10px] lg:w-[145px] lg:h-[8px]"
