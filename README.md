@@ -1,5 +1,5 @@
 # React-App Assignment
-A responsive web application built usiing React, focusing on clean UI, responsiveness, and smooth user experience. The project is fully containerized using Docker for easy setup and execution.
+A responsive web application built using React, focusing on clean UI, responsiveness, and smooth user experience. The project is fully containerized using Docker for easy setup and execution.
 
 ## Tech Stack
 - React
