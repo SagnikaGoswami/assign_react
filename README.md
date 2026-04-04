@@ -16,5 +16,10 @@ A responsive web application built usiing React, focusing on clean UI, responsiv
 ### 1. Build the Docker image
 ```
 docker build -t my-app
+```
+### 2. Run the container
+```
 docker run -p 3000:3000 my-app
 ```
+### 3. Open in browser
+http://localhost:3000
