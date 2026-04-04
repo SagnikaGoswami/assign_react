@@ -23,5 +23,6 @@ docker run -p 3000:3000 my-app
 ```
 ### 3. Open in browser
 http://localhost:3000
+
 > The  React application runs on port 3000 inside the container.
 > You can change the external port if needed (e.g., `-p 5000:3000`).
